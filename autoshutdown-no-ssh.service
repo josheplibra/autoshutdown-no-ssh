@@ -1,0 +1,8 @@
+[Unit]
+Description=Auto shutdown when no SSH connection
+
+[Service]
+ExecStart=sh /services/autoshutdown-no-ssh/autoshutdown_no_ssh.sh
+
+[Install]
+WantedBy=multi-user.target
